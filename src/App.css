@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+.movies, .calendar{
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
+  margin-right: 15px;
+} 
+
+.brand-name {
+  margin-right: 20px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  margin: 0 auto;
+  position: relative;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  padding-top: 15px;
+  border: none;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card__photo {
+  width: 450px;
+  height: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
+  position: absolute;
+  color: white;
+  left: 0;
+  width: 450px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  opacity: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.description:hover {
+  opacity: .5;
+  background-color: black;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .seat-button {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 40px;
+  font-size: 24px;
+  background-color: #FFFF;
+  margin-left: 15px;
+  border-radius: 5px;
+  border-style: ridge;
+}
+
+.seat-button:hover {
+  background-color: rgba(223, 172, 172, 0.5);
+  transition: 0.5s;
+}
+
+label {
+  height: 60px;
+  width: 40px;
+  
+}
+
+
+input {
+  opacity: 0;
+  height: 60px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/* input:checked + label{
+  background-color: black; 
+}  */
+
+label.checked {
+  background-color: red; 
+  border-radius: 5px;
+  border-style: ridge;
+  transition: 0.5s;
+} */
+
+.seat-booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.seat-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.seat {
+  height: 60px;
+  width: 40px;
+  cursor: pointer;
+  background-color: #FFFF;
+  margin-left: 15px;
+  border-radius: 5px;
+  border-style: ridge;
+ 
+}
+
+.seat__booking {
+  background-color: red; 
+  border-radius: 5px;
+  border-style: ridge;
+  transition: 0.5s;
+}
+
+.seat__booked {
+  background-color: gray; 
+  border-radius: 5px;
+  border-style: ridge;
+  transition: 0.5s;
 }
