@@ -14,7 +14,7 @@ export default class SeatBooking extends Component {
             return row.map((seat) => {
                 if(seat.id === id){
                     let edited = seat
-                    edited.status = seat.status == 'booking' ? 'free' : 'booking'
+                    edited.status = seat.status === 'booking' ? 'free' : 'booking'
                     return edited;
                 }
                 return seat;
