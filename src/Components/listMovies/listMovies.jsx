@@ -7,6 +7,7 @@ import SingleData from "../singleData/SingleData";
 import Myloader from "react-spinners/PuffLoader";
 import Genre from "../genres/Genre";
 import useGenre from "../genres/UseGenre";
+import "./listMovies.css"
 
 const ListMovies = () => {
   const [treadingContent, setTreadingContent] = useState([]);
@@ -25,7 +26,7 @@ const ListMovies = () => {
     try {
       const { data } = await axios.get(
         ` 
-      https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&page=${page}&language=en-US&sort_by=popularity.desc&with_genres=${genreforURL}
+      https://api.themoviedb.org/3/discover/movie?api_key=f05cb163c10b18356ae3d8962baeb237&page=${page}&language=en-US&sort_by=popularity.desc&with_genres=${genreforURL}
       `
       );
       setTreadingContent(data.results);
@@ -38,7 +39,7 @@ const ListMovies = () => {
 
   const fetchSearchApi = async () => {
     if (searchTerm) {
-      const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${searchTerm}&page=${page}&sort_by=popularity.desc&page=2`;
+      const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=f05cb163c10b18356ae3d8962baeb237&query=${searchTerm}&page=${page}&sort_by=popularity.desc&page=2`;
       const { data } = await axios.get(SEARCH_API);
       setTreadingContent(data.results);
       setNumOfPages(data.total_pages);

@@ -1,6 +1,6 @@
 .SingleDataMedia {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 165px;
     margin: 15px 3px;
     position: relative;

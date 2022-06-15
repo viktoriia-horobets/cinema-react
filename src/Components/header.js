@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Route, Routes, BrowserRouter, Switch, Link  } from "react-router-dom";
-import Movies from "./movies";
-import Calendar from "./calendar";
 
 export default class Header extends Component {
     render() {
@@ -25,17 +23,8 @@ export default class Header extends Component {
                             <Nav>
                                 <Nav.Link href="#about">About us</Nav.Link>
                             </Nav>
-
                         </Container>
-                    </Navbar>
-                
-                   
-                        <BrowserRouter>
-                            <Route path="movies" element={<Movies/>}></Route>
-                            <Route path="calendar" element={<Calendar/>}></Route>
-                            <Route path="listMovies" element={<listMovies/>}></Route>
-                        </BrowserRouter>
-                    
+                    </Navbar>                    
                 </div>
                 
         )

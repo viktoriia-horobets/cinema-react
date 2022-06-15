@@ -13,8 +13,9 @@ const Card = (data) => {
                 // onDragStart={handleDragStart}
             />
             <div className="description">
-                <h6 className="cast__name">{data.original_title || data.original_name}</h6>
-                {/* <h6 className="character">{n.character}</h6> */}
+                <h4 className="cast__name">{data.original_title || data.original_name}</h4>
+                <h5 className="date">{data.release_date || data.first_air_date}</h5>
+                <button className="button">Buy a ticket</button>
             </div>
         </div>
     )
