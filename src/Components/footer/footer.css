@@ -1,0 +1,30 @@
+.icon__facebook {
+    background-color: #3b5998 !important;
+}
+
+.icon__twitter {
+    background-color:#55ACEE !important;
+}
+
+.icon__google {
+    background-color:#DD4B39 !important;
+}
+
+.icon__linkedin {
+    background-color:#0082CA !important;
+}
+
+.icon__instagram {
+    background-color:#AC2BAC !important;
+}
+
+.icon__github {
+    background-color:#333333 !important;
+}
+
+.join-us {
+    color: #333333;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}

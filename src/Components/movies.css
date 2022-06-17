@@ -1,0 +1,50 @@
+.video__preview {
+    max-width: 100%;
+    max-height: 100%;
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+    background-image: url('https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/styles/promo_mobile/rcf/thor_mobile.png?itok=3kxYo4JW');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.video__title {
+    color: white;
+}
+
+.video__info {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hover-video-player-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.best-movie {
+    background-color: #C6C7C8;
+    margin-top: 30px;
+}
+
+.video__subtitle {
+    font-weight: 665;
+    margin-bottom: 20px;
+}
+
+.title-best-movie {
+    font-weight: 400;
+}
+
+.best-movie-content{
+    margin-left: 30px;
+    padding-top: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

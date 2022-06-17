@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { img_300, noPicture } from "../../defaults/images";
+import Calendar from "../calendar";
+import "./MovieInfo.css"
 
 class MovieInfo extends React.Component {
     constructor(props){
         super(props)
-
-        this.state = { id: props.id.match.params.name, movie: null }
+        this.changeBookingState = this.changeBookingState.bind(this);
+        this.state = { id: props.id.match.params.name, movie: null, showBooking: false }
     }
 
     componentDidMount() {
@@ -13,6 +16,11 @@ class MovieInfo extends React.Component {
         .then(result => {
             this.setState({movie: result})
         })
+        
+    }
+
+    changeBookingState() {
+        this.setState({showBooking: !this.state.showBooking})
     }
 
     render() {
@@ -22,8 +30,26 @@ class MovieInfo extends React.Component {
             return (<h1>Loading</h1>)
         } else {
             return (
-                <h1>{movie.original_title || movie.original_name}</h1>
+                <div className="cardInfo">
+                    <div className="img-info">
+                        <img
+                            src={movie.poster_path ? `${img_300}/${movie.poster_path}` : noPicture}
+                            alt=""
+                            className="card__photo"
+                        />
+                    
+                        <div className="film-info">
+                            <h1 className="title">{movie.original_title || movie.original_name}</h1>
+                            <h2 className="overview">{movie.overview}</h2>
+                            <h2 className="rating">Rating: {movie.vote_average}</h2>
+                            <button className="button-ticket" onClick={this.changeBookingState}>Buy a ticket</button>
+                        </div>
+                    </div>    
+                    { this.state.showBooking ? <Calendar /> : ''}
+                      
+                </div>         
             )
+            
         }
     }
 }

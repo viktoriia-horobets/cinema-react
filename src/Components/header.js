@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Route, Routes, BrowserRouter, Switch, Link  } from "react-router-dom";
+import { Link  } from "react-router-dom";
 
 export default class Header extends Component {
     render() {
@@ -15,7 +15,6 @@ export default class Header extends Component {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
                                     <Link className='movies' to="/movies">Home</Link>
-                                    <Link className='calendar' to="/calendar">Calendar</Link>
                                     <Link className='calendar' to="/listMovies">Movies</Link>
                                 </Nav>
                             </Navbar.Collapse>

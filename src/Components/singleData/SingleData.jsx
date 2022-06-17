@@ -28,7 +28,7 @@ const SingleData = ({
   const history = useHistory();
 
   const handleClick = () => {
-    history.push(`/${mediaType || media_type}/${id}`);
+    history.push(`/movieInfo/${id}`);
   };
   const setVoteClass = (vote) => {
     if (vote >= 8) {

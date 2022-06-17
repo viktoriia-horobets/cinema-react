@@ -22,7 +22,7 @@ const Genre = ({
     try {
       if (media) {
         const { data } = await axios.get(
-          `https://api.themoviedb.org/3/genre/${media}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+          `https://api.themoviedb.org/3/genre/${media}/list?api_key=f05cb163c10b18356ae3d8962baeb237&language=en-US`
         );
         // eslint-disable-next-line
         setGetGenre(data.genres);

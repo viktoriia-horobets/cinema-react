@@ -1,6 +1,14 @@
-.SingleDataMedia {
+.ListContent {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.SingleDataMedia {
+    display: flex;
+    flex-direction: column;
     width: 165px;
     margin: 15px 3px;
     position: relative;

@@ -1,6 +1,7 @@
 .dropdown {
     text-align: left !important;
     width: 100% !important;
+  
   }
   .title__genre {
     color: #f3f3f5;
@@ -10,7 +11,7 @@
   }
   .dropdown-menu.show {
     background: rgba(44, 45, 80) !important;
-    padding: 10px 10px;
+    padding: 20px 20px;
     z-index: 1300;
   }
   .category__content {
@@ -23,7 +24,7 @@
   .mybtn {
     position: absolute !important;
     left: 0px;
-    width: 100px;
+    width: 150px;
     height: 33px;
     top: 0px;
     text-transform: uppercase;

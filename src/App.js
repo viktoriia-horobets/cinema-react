@@ -29,9 +29,6 @@ function App() {
             <Route path="/movies">
               <Movies />
             </Route>
-            <Route path="/calendar">
-              <Calendar />
-            </Route>
             <Route path="/listMovies">
               <ListMovies />
             </Route>

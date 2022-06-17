@@ -7,7 +7,7 @@ export default class Calendar extends Component {
         return (
             <div>
                 <span>calendar</span>
-                {/* <Seat /> */}
+                
                 <SeatBooking />
             </div>
         )

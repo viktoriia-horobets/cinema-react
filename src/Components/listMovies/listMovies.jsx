@@ -65,7 +65,7 @@ const ListMovies = () => {
       <main className="all__movies">
         <div className="my__main">
           <div className="TreadingHome">
-            <h3>{genreTitle && genreTitle.name} Movies:</h3>
+            <h3>{genreTitle && genreTitle.name}</h3>
           </div>
           <LocalSearch
             setSearchTerm={setSearchTerm}
@@ -94,16 +94,7 @@ const ListMovies = () => {
               treadingContent={treadingContent}
             />
           </span>
-          <div className="pag  ">
-            {/* <Pagination2
-              setPage={setPage}
-              numOfPages={numOfPages}
-              media="movies"
-              page={page}
-              setIsLoading={setIsLoading}
-              searchTerm={searchTerm}
-              style={{ marginBottom: "10px" }}
-            /> */}
+          <div className="pag">
           </div>
         </div>
 

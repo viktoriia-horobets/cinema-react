@@ -8,6 +8,7 @@
 .brand-name {
   margin-right: 20px;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .card {
@@ -16,7 +17,7 @@
   width: 450px;
   height: 500px;
   display: flex;  
-  margin-top: 10px;
+  margin-top: 30px;
   border: none;
   overflow: hidden;
 }
@@ -34,6 +35,11 @@ img {
   height: 500px;
   max-width: 100%;
   max-height: 100%;
+}
+
+.cast__name {
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .description {
@@ -56,22 +62,34 @@ img {
 
 .button {
   height: 50px;
-  width: 200px;
+  width: 250px;
   border: none;
   color: white;
+  text-decoration: none;
   padding: 15px 32px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 16px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: #B89BDA;
   margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: .6s;
+  border-radius: 5px;
 }
+
+.button:hover {
+  background: #673AB7;
+}
+
 .description > h4, .description > h5, .description > .button {
   margin-left: 15px;
 }
-
 
 .seat-booking {
   display: flex;
@@ -87,10 +105,10 @@ img {
   height: 60px;
   width: 40px;
   cursor: pointer;
-  background-color: #FFFF;
   margin-left: 15px;
   border-radius: 5px;
   border-style: ridge;
+  color: #fff;
  
 }
 

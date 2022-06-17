@@ -63,6 +63,7 @@ export default function Pagination2({
         classes={{ ul: classes.ul }}
         style={{
           marginTop: "20px",
+          marginBottom: "20px",
           display: "flex",
           zIndex: "1000",
           justifyContent: "center",
